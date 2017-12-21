@@ -1,0 +1,37 @@
+---
+title: "Leaflet Map of Taj Mahal"
+author: "Sunder Raman Venkataraman"
+date: "21st December 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+The source code is available at [GitHub](https://github.com/Krysek/Coursera-Data-Science-Specialization-Developing-Data-Products-Week-2-Assignment). [Just click here!](https://github.com/Krysek/Coursera-Data-Science-Specialization-Developing-Data-Products-Week-2-Assignment)
+
+## Leaflet Map of Taj Mahal
+Create a leaflet map object.
+```{r cars}
+library(leaflet)
+map <- leaflet() %>% addTiles()
+
+```
+
+Create a marker with a picture of Taj Mahal and a link to its homepage.
+```{r}
+TajMahalIcon <- makeIcon(
+   iconUrl = "http://asi.nic.in/images/headers/hdr_tajmahal.jpg",
+   iconWidth = 30*408/255, iconHeight = 30,
+   iconAnchorX = 30*408/255/2, iconAnchorY = 30/2
+)
+```
+
+Add the marker to the map and display the map.
+```{r}
+TajMahalPopup <- c("<a href= 'http://www.tajmahal.gov.in' >Taj Mahal<br><img src='http://asi.nic.in/images/headers/hdr_tajmahal.jpg' 
+width='210' height='132'  alt='Taj Mahal' title='Taj Mahal'></a>")
+map %>%
+   addTiles() %>%
+   addMarkers(lat=27.1750, lng=78.0422, popup = TajMahalPopup)
+```
