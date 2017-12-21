@@ -8,7 +8,10 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-The source code is available at [GitHub](https://github.com/Krysek/Coursera-Data-Science-Specialization-Developing-Data-Products-Week-2-Assignment). [Just click here!](https://github.com/Krysek/Coursera-Data-Science-Specialization-Developing-Data-Products-Week-2-Assignment)
+The source code is available at 
+[GitHub] [Just click here!]
+(https://github.com/SunderRaman/DevelopingDataProducts/blob/master/LeafLetTajMahal.rmd). 
+
 
 ## Leaflet Map of Taj Mahal
 Create a leaflet map object.
