@@ -6,8 +6,8 @@ output: html_document
 ---
 
 The source code is available at 
-[GitHub] [Just click here!]
-(https://github.com/SunderRaman/DevelopingDataProducts/blob/master/LeafLetTajMahal.rmd). 
+[GitHub]
+(https://github.com/SunderRaman/DevelopingDataProducts/blob/master/India_State_Population.rmd). 
 
 
 ## Using Plotly to show the population of Indian States
