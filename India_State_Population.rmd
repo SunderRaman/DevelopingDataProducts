@@ -1,0 +1,28 @@
+---
+title: "Population of India - 2011 "
+author: "Sunder Raman Venkataraman"
+date: "26th December 2017"
+output: html_document
+---
+
+The source code is available at 
+[GitHub] [Just click here!]
+(https://github.com/SunderRaman/DevelopingDataProducts/blob/master/LeafLetTajMahal.rmd). 
+
+
+## Using Plotly to show the population of Indian States
+
+Load the Plotly library
+```{r}
+library(plotly)
+```
+Load the .csv file
+```{r}
+india_pop <- read.csv("C:\\Projects\\R\\Course-9-DevelopingDataProducts\\Week-3\\IndiaStatePopulation.csv")
+```
+Plot the map.
+```{r}
+p<- plot_ly(data=india_pop, x = ~State, y = ~TotalPopulation, type="bar",width = 1000) %>% layout(title="Population of States in India", xaxis=list(title="State"), yaxis=list(title="Population"), margin = list(l=100,r=50,b=150,t=50, pad=4))
+
+p
+```
